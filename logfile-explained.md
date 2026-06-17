@@ -40,6 +40,7 @@ graph TD
     C --> D[Phase 4: Bundling]
 ```
 
+
 ### Phase 1: Authentication & Riddle Generation
 * **MAC Generation (F1):** Processes the configuration string to create a cryptographic seal. This guarantees to the phone that the message originated from a valid cellular network.
 * **XRES Generation (F2):** Creates the target verification string. This is the expected answer the phone must compute to log into the tower.
@@ -55,3 +56,5 @@ graph TD
 ### Phase 4: Bundling
 * **Vector Vector (V) Assembly:** Appends the initial `RAND`, the verification `XRES`, both session keys (`CK`/`IK`), and the network verification token (`AUTN`) into a unified memory buffer.
 """
+
+

@@ -1,6 +1,13 @@
 # Security-Architecture-Cellular-Authentication-AKA-in-Modern-Connected-Vehicles
 This project demonstrates a foundational implementation of the 3GPP Authentication and Key Agreement (AKA) protocol—originally developed for legacy telecommunications—recontextualized for modern Automotive Cybersecurity and Intelligent Transportation Systems (ITS).
 
+The following diagram represents the sequence of the events when a user (UE) connects with a eNodeB i.e. 'Evolved Node B', an element in E-UTRA which is the core hardware base station in a 4G LTE network. It acts as the direct bridge connecting your smartphone (User Equipment) to the mobile operator's core network and handles both wireless radio transmissions and higher-layer networking tasks. As ahandshake mechanism there are set of keys genertated and exchanged for the authentication and verification. 
+
+<img width="2960" height="1595" alt="image" src="https://github.com/user-attachments/assets/ab9a31ea-b456-4f29-9251-1986128dc5a1" />
+
+
+In contect of security expecially with hardware backed interoperabaility, Automotive cybersecurity resembles the base concept from 3GPP as explained above.
+
 As vehicles transition into software-defined, hyper-connected platforms, they increasingly rely on built-in Telematic Control Units (TCUs) and eSIMs to communicate with cellular networks. This code simulates the precise cryptographic engine used to authenticate a vehicle to the cloud, prevent network spoofing, and derive the session keys needed to protect safety-critical vehicle telematics.The accompanying flow diagram maps out how raw vehicular identifiers and network challenges are processed through a multi-stage cryptographic pipeline to secure both edge-to-cloud infrastructure and in-vehicle domain isolation.
 
 ---

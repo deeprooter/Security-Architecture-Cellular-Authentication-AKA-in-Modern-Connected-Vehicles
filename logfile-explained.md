@@ -1,7 +1,14 @@
 
 # This document outlines the step-by-step sequence and phase breakdown for generating authentication vectors within 4G LTE networks.
 
----
+- Authentication Vector generation for the MME and UE side while doing initial attach for service request. Different keys have to be exchanged in this process and both should be generated using algorithm.
+- Generation of authentication vector and authentication key using HMACSha256 and Sha1 algorithm.
+- Key derivation from authentication vector.
+- Generation of Kasme, Kenb keys and derivation of sub keys from these two keys.
+- Key generation for NAS integrity protection and ciphering.
+
+
+
 
 ## 📋 Step-by-Step Sequence
 
